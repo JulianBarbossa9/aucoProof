@@ -13,12 +13,13 @@ const PostDetail = async ({ params } : any) => {
   try {
     const data = await fetch(url)
     const response = await data.json()
+    // ?page=2&per_page=5
 
     return (
       <>
       <div className="m-32 ">
         {/* <button className='bg-sky-500 px-4 py-3 rounded'> */}
-          <Link href={'/'} className='bg-indigo-500  px-4 py-3 rounded '>
+          <Link href={'/'} className='bg-indigo-500 hover:bg-indigo-400  px-4 py-3 rounded '>
             Home
           </Link>
         {/* </button> */}
@@ -27,7 +28,7 @@ const PostDetail = async ({ params } : any) => {
               <h2 className='text-gray-800 text-3xl font-semibold uppercase mb-5'>{ response.title}</h2>
               <hr />
               <p className='text-black mt-5 normal-case'>{response.body}</p>
-              
+              {/* todo: bringht the comments https://jsonplaceholder.typicode.com/posts/1/comments*/}
             </div>
           </div>
       </div>
