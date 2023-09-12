@@ -20,9 +20,6 @@ const PaginationControls: FC<PaginationControlsProps> = ({
   const page = searchParams.get("page") ?? "1";
   const per_page = searchParams.get("per_page") ?? "5";
 
-  const oper =  Math.ceil(10 / Number(per_page))
-
-  console.log(page, oper )
 
   return (
     <div className="flex gap-2">
