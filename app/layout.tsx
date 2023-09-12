@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} mx-32`}>
+      <body className={`${roboto.className} md:mx-32 sm:mx-20 `}>
         <PostProvider>
           {children}
         </PostProvider>
