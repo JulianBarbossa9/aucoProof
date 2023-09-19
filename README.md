@@ -1,5 +1,6 @@
 
-# Technical test of the company __AUCO__
+# Post
+
 
 This project was made with NextJS 13, TailwindCSS, and public API: JSONPlaceholder
 
